@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Tabla de Multiplicar</h2>
+
+<table class="container" border="1">
+    @for(int fila=1; fila<=12; fila++)
+    {
+       <tr>
+           @for(int columna =1; columna<=10; columna++)
+           {
+               <td>@fila  x @columna = @(fila*columna)</td>
+           }
+       </tr>
+    }
+</table>
